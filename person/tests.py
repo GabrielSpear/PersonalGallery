@@ -1,7 +1,8 @@
 from django.test import TestCase
 import datetime as dt
-# Create your tests here.
 from .models import Photos, categories, Location
+
+# Create your tests here.
 
 class LocationTestClass(TestCase):
     def setUp(self):
@@ -21,3 +22,22 @@ class LocationTestClass(TestCase):
         self.location.delete_location()
         locations = Location.objects.all()
         self.assertTrue(len(locations)==0)
+
+
+class CategoriesTestClass(TestCase):
+    def setUp(self):
+        self.category = categories(name='nature')
+
+    def test_category_instance(self):
+        self.assertTrue(isinstance(self.category, categories))
+
+    def test_save_category_method(self):
+        self.category.save_category()
+        categories_object = categories.objects.all()
+        self.assertTrue(len(categories_object)>0)
+    def test_delete_category_method(self):
+        self.category.save_category()
+        categories_object = categories.objects.all()
+        self.category.delete_category()
+        categories_object = categories.objects.all()
+        self.assertTrue(len(categories_object)==0)
