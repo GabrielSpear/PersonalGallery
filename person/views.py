@@ -27,3 +27,8 @@ def image(request,image_id):
     except DoesNotExist:
         raise Http404()
     return render(request,'image.html',{"image":image})
+
+
+def filter(request):
+    image = Image.get_images()
+    return render(request,'location.html',{"images":image})
