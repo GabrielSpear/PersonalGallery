@@ -1,4 +1,5 @@
 from django.contrib import admin
+from .models import Photos, Location, categories
 
 # Register your models here.
 class PhotosAdmin(admin.ModelAdmin):
