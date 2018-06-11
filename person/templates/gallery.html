@@ -1,6 +1,4 @@
 {% extends 'base.html' %} {% block content %}
-
-
   <div class="wrap">
     {% for photo_item in photos%}
     <a href="{% url 'myPhoto' photo_item.id %}">
