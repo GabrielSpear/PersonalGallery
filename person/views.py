@@ -6,3 +6,7 @@ from .models import Photos
 def home(request):
     image = Image.get_images()
     return render(request,'index.html',{"images":image})
+
+def my_gallery(request):
+    photos = Photos.objects.all()
+    return render(request, 'gallery.html', {'photos':photos})
