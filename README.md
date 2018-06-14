@@ -1,15 +1,14 @@
-*Personal Gallery*
+#Personal Gallery
+
+##Description
+This is a web app that allows the user to views, copy links of different photos of different categories based on ones interest. A user is not allowed to upload, comment or like a photo but can copy the photos link description.
+
+######By Gabriel Gatumu
 
 
-Description
+###User Stories
 
-This web app where users view different categories of photos..
-By Gabriel Gatumu
-
-
-User Stories
-
-As a user I would like:
+####As A User I Would Like:
 
     View different photos that interest me.
     Click on a single photo to expand it and also view the details of the photo.
@@ -17,36 +16,23 @@ As a user I would like:
     Copy a link to the photo to share with my friends.
     View photos based on the location they were taken.
 
+####How To Use The App
 
-Prerequisites
+    Visit https://github.com/GabrielSpear/PersonalGallery/tree/master
+    clone the repository to your local machine
+    Download and install virtual environment then activate it
+    Install all requirements needed from the requirements.txt file
 
-    Python3.6.4
-    dj-database-url==0.4.2
-    Django==1.11
-    gunicorn==19.7.1
-    Pillow==5.0.0
-    psycopg2==2.7.4
-    psycopg2-binary==2.7.4
-    python-decouple==3.1
-    pytz==2018.3
-    whitenoise==3.3.1
 
-How to use it
-
-    must have internet connection
-    Click https://
-    or
-    Copy https: ) and Paste the link on your prefered browser
-
-Setup/Installation Requirements
+###Setup/Installation Requirements
 
     internet access
 
-    git clone
+    git clone   https://github.com/GabrielSpear/PersonalGallery/tree/master
 
-    $ cd gallery
+    $ cd PersonalGallery
 
-    $ python3.6 -m venv virtual (install virtual environment)
+    $ pip3 install virtualenv
 
     $ source virtual/bin/activate
 
@@ -55,17 +41,34 @@ Setup/Installation Requirements
     $ python3.6 manage.py runserver
 
 
-In case You have any issues using this code please do no hesitate to get in touch with me through gabrieldvjspear@gmail.com or leave a commit here on github.
-Known Bugs
+##Requirements
+
+      Python3.6.4
+      dj-database-url==0.4.2
+      Django==1.11
+      gunicorn==19.7.1
+      Pillow==5.0.0
+      psycopg2==2.7.4
+      psycopg2-binary==2.7.4
+      python-decouple==3.1
+      pytz==2018.3
+      whitenoise==3.3.1
+
+"'Incase you have any questionor issues while using this code do not hesitate to get in touch with me via gabrieldvjspear@gmail.com'"
+
+
+###############Know bugs
 
 No known bugs
-Technologies Used
+
+####Technologies Used
 
     Python3.6
     Django.1.11
     Bootstrap
     postgress
+    virtualenv
 
-License
+###License
 
 MIT (c) 2018 Gabriel Gatumu
