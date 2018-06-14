@@ -41,3 +41,38 @@ class CategoriesTestClass(TestCase):
         self.category.delete_category()
         categories_object = categories.objects.all()
         self.assertTrue(len(categories_object)==0)
+
+
+
+class ImageTestClass(TestCase):
+    def setUp(self):
+
+        self.thunder = Image(
+            name="Thunder", description="Can move mountains")
+        self.thunder.save()
+
+        # creating new category and saving it
+        self.nature = Category(category_name="nature")
+        self.nature.save()
+
+        # creating new location and saving it
+        self.sweet = Location(place="Tsavo")
+        self.sweet.save()
+
+        self.thunder.location.add(self.sweet)
+        self.thunder.category.add(self.nature)
+
+    # testing instance
+    def test_instance(self):
+        self.assertTrue(isinstance(self.thunder, Photo))
+
+    def test_save_photo(self):
+        self.thunder.save_photo()
+        photos = Photo.objects.all()
+        self.assertTrue(len(photos) > 0)
+
+    def test_delete_photo(self):
+        self.thunder.save_photo()
+        self.thunder.delete_photo()
+        photos = Photo.objects.all()
+        self.assertTrue(len(photos) < 1)
