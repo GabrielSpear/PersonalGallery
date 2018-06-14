@@ -1,14 +1,14 @@
-#Personal Gallery
+#Personal Gallery#
 
-##Description
+##Description##
 This is a web app that allows the user to views, copy links of different photos of different categories based on ones interest. A user is not allowed to upload, comment or like a photo but can copy the photos link description.
 
-######By Gabriel Gatumu
+######By Gabriel Gatumu######
 
 
-###User Stories
+###User Stories###
 
-####As A User I Would Like:
+####As A User I Would Like:####
 
     View different photos that interest me.
     Click on a single photo to expand it and also view the details of the photo.
@@ -16,7 +16,7 @@ This is a web app that allows the user to views, copy links of different photos 
     Copy a link to the photo to share with my friends.
     View photos based on the location they were taken.
 
-####How To Use The App
+####How To Use The App####
 
     Visit https://github.com/GabrielSpear/PersonalGallery/tree/master
     clone the repository to your local machine
@@ -24,7 +24,7 @@ This is a web app that allows the user to views, copy links of different photos 
     Install all requirements needed from the requirements.txt file
 
 
-###Setup/Installation Requirements
+###Setup/Installation Requirements###
 
     internet access
 
@@ -41,7 +41,7 @@ This is a web app that allows the user to views, copy links of different photos 
     $ python3.6 manage.py runserver
 
 
-##Requirements
+##Requirements##
 
       Python3.6.4
       dj-database-url==0.4.2
@@ -57,11 +57,11 @@ This is a web app that allows the user to views, copy links of different photos 
 "'Incase you have any questionor issues while using this code do not hesitate to get in touch with me via gabrieldvjspear@gmail.com'"
 
 
-###############Know bugs
+###############Know bugs###############
 
 No known bugs
 
-####Technologies Used
+####Technologies Used####
 
     Python3.6
     Django.1.11
@@ -69,6 +69,6 @@ No known bugs
     postgress
     virtualenv
 
-###License
+###License###
 
 MIT (c) 2018 Gabriel Gatumu
