@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-  <div class="wrap" style="padding-left: 10px; padding-right:10; text-align: center;">
+  <div class="wrap" style="padding-left: 2px; padding-right: 3px; text-align: center;">
     {% for photo_item in photos%}
     <a href="{% url 'myPhoto' photo_item.id %}">
       <div class="box">
